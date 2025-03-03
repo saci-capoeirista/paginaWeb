@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa para a minha Princesa!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0e6f6;
+            color: #333;
+            text-align: center;
+        }
+        header {
+            background-color: #FF00FF;
+            padding: 20px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 30px;
+        }
+        .foto {
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            object-fit: cover;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <audio id="audio" autoplay loop>
+            <source src="/musica/musica.mp3.mp3" type="audio/mp3">
+            Seu navegador não suporta áudio.
+        </audio>
+        
+        <h1>Surpresa para você, minha gatinha!</h1>
+    </header>
+
+    <div class="container">
+        <h2>Eu te amo muito!</h2>
+        <p>Fiz esse site simples para demonstrar um pouco do meu amor por você!</p>
+        <img src="imagens/IMG_20250215_205812_662.webp" alt="Nosso momento" class="foto">
+        <p>Que possamos criar muitos outros momentos especiais juntos!</p>
+        <button onclick="mostrarMensagem()">Clique aqui para ler uma verdade</button>
+<p id="mensagem"></p>
+
+    </div>
+
+    <footer>
+        <p>Feito com muito amor pelo seu pretinho🥰🥰🥰🥰</p>
+    </footer>
+
+    <script>
+        function mostrarMensagem() {
+            document.getElementById("mensagem").innerHTML = "Você é a mulher da minha vida. EU TE AMO MUITO MEU AMOR!!!!!";     
+        }
+        </script>
+        
+        <img src="imagens/IMG_20250225_172015_384.webp" alt="Momento Especial" class="foto" onmouseover="mostrarMensagemSurpresa()" />
+        <p id="mensagem_surpresa" style="display: none;">"Você é a razão do meu sorriso todos os dias!"</p>
+        
+        <script>
+        function mostrarMensagemSurpresa() {
+        document.getElementById('mensagem_surpresa').style.display = 'block';
+        }
+        </script>
+        
+  
+
+</body>
+</html>
+ 
